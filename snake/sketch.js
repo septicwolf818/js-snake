@@ -8,7 +8,7 @@ var points = 0;
 var defaultframerate = 5;
 var framerate = defaultframerate;
 var chromeMode = false; //Yeah, there is plenty of RAM! Eat it all!
-var directrionChanged = false;
+var directionChanged = false;
 var gamestate = "play";
 var fruit;
 
@@ -101,7 +101,7 @@ function draw() {
     else text('RAM usage: ' + points / 1024 + " GB", 10, 30);
   else text('Points: ' + points, 10, 30);
 
-  directrionChanged = false;
+  directionChanged = false;
 
 }
 
@@ -256,24 +256,24 @@ function changeSpeed(val) {
 }
 
 function keyReleased() {
-  if (!directrionChanged)
+  if (!directionChanged)
     switch (keyCode) {
 
       case 37:
         if (snakeHead.getDirection() != "right") snakeHead.setDirection("left");
-        directrionChanged = true;
+        directionChanged = true;
         break;
       case 39:
         if (snakeHead.getDirection() != "left") snakeHead.setDirection("right");
-        directrionChanged = true;
+        directionChanged = true;
         break;
       case 38:
         if (snakeHead.getDirection() != "bottom") snakeHead.setDirection("up");
-        directrionChanged = true;
+        directionChanged = true;
         break;
       case 40:
         if (snakeHead.getDirection() != "up") snakeHead.setDirection("bottom");
-        directrionChanged = true;
+        directionChanged = true;
         break;
       case 107:
         changeSpeed(1);

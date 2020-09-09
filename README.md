@@ -1,6 +1,6 @@
 # js-snake
 Snake game made using p5.js
 # Screenshot
-![Zrzut ekranu z 2020-05-12 09-40-13](https://user-images.githubusercontent.com/34957083/81653067-ce629980-9434-11ea-90ea-4f242a5d5126.png)
+![snake](https://user-images.githubusercontent.com/34957083/92650462-d4865b00-f2ec-11ea-8ca0-e3d0b7bccfff.png)
 
 ## The game has hidden features
